@@ -1,7 +1,3 @@
-body {
-    background-color: aquamarine;
-    
-}
 h1{
     text-align: center;
 }
@@ -19,8 +15,8 @@ figure{
 }
 .flexContainer{
     display: flex;
-    background-color: blue;
     justify-content: space-between;
+    
 }
 .divIzquierdo{
     width: 70%;
@@ -44,4 +40,56 @@ figure{
 div> h4{
     margin-top: 0%;
     margin-bottom: 0%;
+}
+
+.divFondoIzquierdo{
+    width: 50%;
+}
+.imagenTamaño{
+    width: 100px;
+    height: 100px;
+}
+.flexContainerIIII{
+    display: flex;
+    justify-content: space-around;
+    background-color: greenyellow;
+}
+#flexContenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+#gridContenedor{
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-rows: 100px 400px;
+}
+div#flexContenedor > div{
+    width: 400px;
+    border: 1px solid red;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+div#gridContenedor > div{
+    border: 1px solid blue;
+    margin-right: 20px;
+}
+#gridArea {
+    display: grid;
+    grid-template-areas: 'encabezado encabezado encabezado aside'
+    'encabezado intermedio intermedio aside'
+    'encabezado encabezado encabezado aside';
+}
+#divUno {
+    grid-area: encabezado;
+    background-color: aqua;
+}
+#divDos {
+    grid-area: intermedio;
+    background-color: brown;
+}
+#divTres {
+    grid-area: aside;
+    background-color: chartreuse;
 }
